@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Envelope + Letter (Open/Close on Click)</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="envelope-wrapper">
+            <div class="envelope">
+                <div class="letter">
+                    <div class="text">
+                        <strong>To SamST (시누이)</strong>
+                        <p>
+                            Hi teacher!
+
+                            Bugingi istegen qateligim uwin sizden kewirim suragym kelip tur (kiwkene neobychnyi qylyp). It's all my fault. Sizdi weksiz jaqsy korem. Bir jyl qaldy. Sizben kop uaqyt otkizgim keled. 1 jyl tez otip keted, odan keiin jan jaqqa tarap ketemiz. Bugingi istegenim durys bolmady. Siz magan jasagan zattarynyzga, komeginizge, zabotanyzga, otplatit etu mumkin emes. Oitkeni ol priceless. Magan bola myna Qyzylordanyn ystygyna qaramai kelgeninizge weksiz rahmet. Auyrganynyz sebebi menen de boluy mumkin. Magan material akelip, energy qurtasyz. Bulai ewkim prosto tak jasamaityn wygar magan. Bugin sizdi renjitkenim sizdi qurmettemegendei boldy. No samom dele iya vas ewwe kak uvajaiu. Let me explain today's situation (Although it's still my fault.). Bugin nastroeniem kak americanskie gorki siaqty ozgerdi we. Kewe papamen che to ne to bolyp qaldy + ewwe tagy bir reasondar bar (jeke zattar bolgany uwin aita almaim, sorry). Kewirim suraim, I still love you, and I will love you for the rest of my life <3
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="heart"></div>
+        </div>
+    </div>
+    <script>
+        const envelope = document.querySelector('.envelope-wrapper');
+        envelope.addEventListener('click', () => {
+            envelope.classList.toggle('flap');
+        });
+    </script>
+</body>
+</html>
